@@ -51,7 +51,7 @@ public class ColorWidget extends PressableWidget {
         RenderSystem.enableBlend();
         RenderSystem.defaultBlendFunc();
         RenderSystem.blendFunc(GlStateManager.SrcFactor.SRC_ALPHA, GlStateManager.DstFactor.ONE_MINUS_SRC_ALPHA);
-        drawTexture(context, TEXTURE, this.getX(), this.getY(), this.isFocused() ? 20 : 0, this.color.ordinal() * 20, 20, 20, 40, 180, 1);
+        context.drawTexture(TEXTURE, this.getX(), this.getY(), this.isFocused() ? 20 : 0, this.color.ordinal() * 20, 20, 20, 40, 180, 1);
         //this.renderBackground(matrices, minecraftClient, mouseX, mouseY); 
     }
 
