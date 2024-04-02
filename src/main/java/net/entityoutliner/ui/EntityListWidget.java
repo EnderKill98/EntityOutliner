@@ -42,8 +42,8 @@ public class EntityListWidget extends ElementListWidget<EntityListWidget.Entry> 
     }
 
     @Override
-    protected int getScrollbarPositionX() {
-        return super.getScrollbarPositionX() + 32;
+    protected int getScrollbarX() {
+        return super.getScrollbarX() + 32;
     }
 
     @Environment(EnvType.CLIENT)
